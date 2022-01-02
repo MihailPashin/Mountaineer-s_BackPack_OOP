@@ -50,3 +50,15 @@ C:\Users\МИХАЛ\Desktop\Mountainer_s_BackPack_OOP\obj\Debug\netcoreapp3.1\Mo
 C:\Users\МИХАЛ\Desktop\Mountainer_s_BackPack_OOP\obj\Debug\netcoreapp3.1\Mountainer's_BackPack_OOP.dll
 C:\Users\МИХАЛ\Desktop\Mountainer_s_BackPack_OOP\obj\Debug\netcoreapp3.1\Mountainer's_BackPack_OOP.pdb
 C:\Users\МИХАЛ\Desktop\Mountainer_s_BackPack_OOP\obj\Debug\netcoreapp3.1\Mountainer's_BackPack_OOP.genruntimeconfig.cache
+C:\Users\МИХАЛ\Desktop\Mountaineer-s_BackPack_OOP\bin\Debug\netcoreapp3.1\Mountainer's_BackPack_OOP.exe
+C:\Users\МИХАЛ\Desktop\Mountaineer-s_BackPack_OOP\bin\Debug\netcoreapp3.1\Mountainer's_BackPack_OOP.deps.json
+C:\Users\МИХАЛ\Desktop\Mountaineer-s_BackPack_OOP\bin\Debug\netcoreapp3.1\Mountainer's_BackPack_OOP.runtimeconfig.json
+C:\Users\МИХАЛ\Desktop\Mountaineer-s_BackPack_OOP\bin\Debug\netcoreapp3.1\Mountainer's_BackPack_OOP.runtimeconfig.dev.json
+C:\Users\МИХАЛ\Desktop\Mountaineer-s_BackPack_OOP\bin\Debug\netcoreapp3.1\Mountainer's_BackPack_OOP.dll
+C:\Users\МИХАЛ\Desktop\Mountaineer-s_BackPack_OOP\bin\Debug\netcoreapp3.1\Mountainer's_BackPack_OOP.pdb
+C:\Users\МИХАЛ\Desktop\Mountaineer-s_BackPack_OOP\obj\Debug\netcoreapp3.1\Mountainer's_BackPack_OOP.AssemblyInfoInputs.cache
+C:\Users\МИХАЛ\Desktop\Mountaineer-s_BackPack_OOP\obj\Debug\netcoreapp3.1\Mountainer's_BackPack_OOP.AssemblyInfo.cs
+C:\Users\МИХАЛ\Desktop\Mountaineer-s_BackPack_OOP\obj\Debug\netcoreapp3.1\Mountainer's_BackPack_OOP.csproj.CoreCompileInputs.cache
+C:\Users\МИХАЛ\Desktop\Mountaineer-s_BackPack_OOP\obj\Debug\netcoreapp3.1\Mountainer's_BackPack_OOP.dll
+C:\Users\МИХАЛ\Desktop\Mountaineer-s_BackPack_OOP\obj\Debug\netcoreapp3.1\Mountainer's_BackPack_OOP.pdb
+C:\Users\МИХАЛ\Desktop\Mountaineer-s_BackPack_OOP\obj\Debug\netcoreapp3.1\Mountainer's_BackPack_OOP.genruntimeconfig.cache

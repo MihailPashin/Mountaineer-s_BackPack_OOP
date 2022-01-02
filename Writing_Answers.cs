@@ -50,7 +50,9 @@ namespace Mountainer_s_BackPack_OOP
         }
         public bool Osnova()
         {       input = Console.ReadLine();
-                if (input != "") input = char.ToUpper(input[0]) + input.Substring(1);
+                input = input.ToLower();
+                
+           
 
                 List<int> result = Right_Answers.right_answers.Select((s, index) => new { s, index })
                         .Where(x => x.s == input)

@@ -20,13 +20,13 @@ namespace Mountainer_s_BackPack_OOP
                 if (s)
                 {
                     Console.WriteLine("Тогда начнём собирать снаряжение");
-                    Thread.Sleep(1750);
+                    Thread.Sleep(1200);
                     Sequence_Of_Actions();
                 }
                 else
                 {
                     Console.WriteLine("Давай по новой, что-то не так ");
-                    Thread.Sleep(2300);
+                    Thread.Sleep(1200);
                     Console.Clear();
                 }
             }
@@ -57,13 +57,13 @@ namespace Mountainer_s_BackPack_OOP
                 input = Console.ReadLine();
                 if (Regex.Match(input, russian_letters).Success && input!="")
                 {
-                    if (char.ToUpper(input[0]) + input.Substring(1) == "Да")
-                    {
-                        
-                        return true;
-                    }
-                Console.WriteLine("Вы неверно ввели ответ на вопрос");
-                    return false;
+                input = input.ToLower();
+                      if (char.ToUpper(input[0]) + input.Substring(1) == "Да")
+                      {return true;}
+                      
+                       else { Console.WriteLine("Вы неверно ввели ответ на вопрос");
+                             return false;  }
+               
                 }
 
                 else

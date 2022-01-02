@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\МИХАЛ\\Desktop\\Mountainer_s_BackPack_OOP\\Mountainer's_BackPack_OOP.csproj",
+      "projectUniqueName": "C:\\Users\\МИХАЛ\\Desktop\\Mountaineer-s_BackPack_OOP\\Mountainer's_BackPack_OOP.csproj",
       "projectName": "Mountainer's_BackPack_OOP",
-      "projectPath": "C:\\Users\\МИХАЛ\\Desktop\\Mountainer_s_BackPack_OOP\\Mountainer's_BackPack_OOP.csproj",
+      "projectPath": "C:\\Users\\МИХАЛ\\Desktop\\Mountaineer-s_BackPack_OOP\\Mountainer's_BackPack_OOP.csproj",
       "packagesPath": "C:\\Users\\МИХАЛ\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\МИХАЛ\\Desktop\\Mountainer_s_BackPack_OOP\\obj\\",
+      "outputPath": "C:\\Users\\МИХАЛ\\Desktop\\Mountaineer-s_BackPack_OOP\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
