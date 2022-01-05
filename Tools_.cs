@@ -6,7 +6,7 @@ using System.Threading;
 
 namespace Mountainer_s_BackPack_OOP
 {
-    class Tools_:Actions_With_Items
+    class Tools_ :Actions_With_Items
     {
         string[] tools = new string[] { "Страховочная обвязка", "Веревка", "Каска", "Фонарик", "Навигатор" };
         void Actions_With_Items.Choose_And_Put()
@@ -24,7 +24,7 @@ namespace Mountainer_s_BackPack_OOP
                 if (checker) needed_items_for_second_level++;
 
             }
-            while (needed_items_for_second_level != 4);
+            while (needed_items_for_second_level != 4 && BackPack.error != 3);
 
         }
 

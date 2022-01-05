@@ -10,6 +10,8 @@ namespace Mountainer_s_BackPack_OOP
     {
         static int count;
         static string[] items = new string[6];
+        public static int error = 0;
+        static List<string> glitches = new List<string>();
         public BackPack(string item)
         {
             Item = item;
@@ -46,6 +48,25 @@ namespace Mountainer_s_BackPack_OOP
             Console.WriteLine("Спасибо за игру!");
             Thread.Sleep(2000);
         }
-
+        public static void Checker()
+        {
+            error++;
+            switch(error)
+            {
+                case 1: case 2: Console.WriteLine($"Ой, у вас осталась только {3-error} ошибки"); break;
+                case 3:
+                    glitches.Add(" Три ошибки это много");
+                    Console.Clear();
+                    Viewing_Ranets();
+                    //GameOver();
+                    throw new Exception_Exit(glitches, "Игра окончена!");
+                   
+            }
+        }
+        //static void GameOver()
+        //{
+        //    Console.WriteLine("Игра закончена. Постарайтесь не расстроить в следующий раз ");
+        //    Thread.Sleep(1800);
+        //}
     }
 }

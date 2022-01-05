@@ -6,7 +6,7 @@ using System.Threading;
 
 namespace Mountainer_s_BackPack_OOP
 {
-    class Writing_Answers : Right_Answers
+    class Writing_Answers :  IRight_Answers
     {
         static string proverka_for_cyrrilic = @"^([а-яА-Я \-]*)$";
         public Writing_Answers(string[] variants, int index_of_level)
@@ -54,7 +54,7 @@ namespace Mountainer_s_BackPack_OOP
                 
            
 
-                List<int> result = Right_Answers.right_answers.Select((s, index) => new { s, index })
+                List<int> result = IRight_Answers.right_answers.Select((s, index) => new { s, index })
                         .Where(x => x.s == input)
                         .Select(x => x.index)
                         .ToList();
@@ -83,7 +83,7 @@ namespace Mountainer_s_BackPack_OOP
                 }
                 else
                 {
-                    
+                BackPack.Checker(); // посчёт штрафных баллов
                     switch (index_of_level)
                     {
                         case 1: Console.WriteLine("Не хочу чтобы ты превратился в ледышку когда шел к горе.Давай по новой"); break;
