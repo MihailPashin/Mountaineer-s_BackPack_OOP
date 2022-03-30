@@ -23,7 +23,7 @@ namespace Mountainer_s_BackPack_OOP
                  checker = c2.Osnova();
 
             }
-            while (!checker);
+            while (!checker && BackPack.error!=3);
             Console.Clear();
         }
 

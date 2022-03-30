@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading;
 
@@ -34,19 +32,33 @@ namespace Mountainer_s_BackPack_OOP
         }
         static void Sequence_Of_Actions()
         {
-            Actions_With_Items newPack;
-            Clothes_ cl = new Clothes_();
-            newPack = cl;
-            newPack.Choose_And_Put();
-            newPack.checkItems();
-            Tools_ t1 = new Tools_();
-            newPack = t1;
-            newPack.Choose_And_Put();
-            newPack.checkItems();
-            AdditionalItems it1 = new AdditionalItems();
-            newPack = it1;
-            newPack.Choose_And_Put();
-            newPack.checkItems();
+
+            try
+            {
+                Actions_With_Items newPack;
+                Clothes_ cl = new Clothes_();
+                newPack = cl;
+                newPack.Choose_And_Put();
+                newPack.checkItems();
+                Tools_ t1 = new Tools_();
+                newPack = t1;
+                newPack.Choose_And_Put();
+                newPack.checkItems();
+                AdditionalItems it1 = new AdditionalItems();
+                newPack = it1;
+                newPack.Choose_And_Put();
+                newPack.checkItems();
+            }
+            catch(Exception_Exit c2)
+            {
+                string error = c2.Message + " ";
+              
+                foreach (string i in c2.glitches_2)
+                {
+                    error += i + " ";
+                }
+                Console.WriteLine(error);
+            }
 
         }
         static bool Question()

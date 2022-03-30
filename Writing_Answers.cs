@@ -6,7 +6,7 @@ using System.Threading;
 
 namespace Mountainer_s_BackPack_OOP
 {
-    class Writing_Answers : Right_Answers
+    class Writing_Answers 
     {
         static string proverka_for_cyrrilic = @"^([а-яА-Я \-]*)$";
         public Writing_Answers(string[] variants, int index_of_level)
@@ -51,15 +51,10 @@ namespace Mountainer_s_BackPack_OOP
         public bool Osnova()
         {       input = Console.ReadLine();
                 input = input.ToLower();
-                
-           
 
-                List<int> result = Right_Answers.right_answers.Select((s, index) => new { s, index })
-                        .Where(x => x.s == input)
-                        .Select(x => x.index)
-                        .ToList();
-
-                if (result.Count == 1)
+                RightAnswers_Dictionary c = new RightAnswers_Dictionary();
+                int result = c.CheckValues(index_of_level,input);
+                if (result == 1)
                 {
                     BackPack f1 = new BackPack($"{input}");
                     Console.WriteLine($"Вы положили в рюкзак {input}");
@@ -83,10 +78,11 @@ namespace Mountainer_s_BackPack_OOP
                 }
                 else
                 {
-                    
+                BackPack.Checker(); // посчёт штрафных баллов
                     switch (index_of_level)
                     {
-                        case 1: Console.WriteLine("Не хочу чтобы ты превратился в ледышку когда шел к горе.Давай по новой"); break;
+                        case 1: Console.WriteLine("Не хочу чтобы ты превратился в ледышку когда шел к горе.Давай по новой");
+                        break;
                         case 2:
                         if(input== "Навигатор")
                         Console.WriteLine($"Вы положили в рюкзак {input} и это не подходит");
