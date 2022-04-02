@@ -12,21 +12,40 @@ namespace Mountainer_s_BackPack_OOP
         static string[] items = new string[6];
         public static int error = 0;
         static List<string> glitches = new List<string>();
+        public static bool all_its_fine;
         public BackPack(string item)
-        {
-            Item = item;
-            count++;
-        }
-        public static int Count
-        {
-            get { return count; }
-        }
+        { Item = item;}
+        public static int Count =>  count;
+        public static bool All_its_fine => all_its_fine;
+
         private string Item
         {
             set
             {
-                items[count] = value;
-
+                bool SET_VALUE = false;
+                string s = value;
+                for (int i = 0; items[i] != null && i<items.Length;i++)
+                { 
+                    if (value == items[i]){SET_VALUE = true;}
+                }
+               
+                switch(SET_VALUE)
+                {
+                    case true: Console.WriteLine("Не пытайтесь нас обмануть"); all_its_fine=false; 
+                        break;
+                    case false:
+                        Proverochka_OnCorrect c= new Proverochka_OnCorrect(value);
+                        if (c.Check_Playing() == 1)
+                        {
+                            items[count] = value;
+                            Console.WriteLine("Значение прошло проверку");
+                            all_its_fine = true;
+                            count++;
+                        }
+                        else
+                        {Console.WriteLine("Не пытайтесь нас обмануть"); all_its_fine = false;}
+                        break;
+                }
             }
         }
         public static void Viewing_Ranets()
@@ -63,10 +82,6 @@ namespace Mountainer_s_BackPack_OOP
                    
             }
         }
-        //static void GameOver()
-        //{
-        //    Console.WriteLine("Игра закончена. Постарайтесь не расстроить в следующий раз ");
-        //    Thread.Sleep(1800);
-        //}
+      
     }
 }

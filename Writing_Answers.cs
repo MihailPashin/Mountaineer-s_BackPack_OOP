@@ -12,9 +12,9 @@ namespace Mountainer_s_BackPack_OOP
         public Writing_Answers(string[] variants, int index_of_level)
         {
             Index_of_level = index_of_level;
-          Variants = variants;
-           
+            Variants = variants;   
         }
+
         static int index_of_level;
         static string[] strocka;
         static string input;
@@ -24,9 +24,9 @@ namespace Mountainer_s_BackPack_OOP
                 {
                     index_of_level = value;
                 }
-
-            } get { return index_of_level; }
+            } 
         }
+        public static int Asking_ForIndex() => index_of_level;
         private string[] Variants
         {
             set
@@ -49,17 +49,17 @@ namespace Mountainer_s_BackPack_OOP
 
         }
         public bool Osnova()
-        {       input = Console.ReadLine();
+        {      
+                input = Console.ReadLine();
                 input = input.ToLower();
-
-                RightAnswers_Dictionary c = new RightAnswers_Dictionary();
-                int result = c.CheckValues(index_of_level,input);
-                if (result == 1)
+                BackPack f1 = new BackPack($"{input}");
+               
+                if (BackPack.All_its_fine)
                 {
-                    BackPack f1 = new BackPack($"{input}");
+                   
                     Console.WriteLine($"Вы положили в рюкзак {input}");
                     
-                    switch (index_of_level)
+                    switch (Asking_ForIndex())
                     {
                      
                         case 2:
@@ -79,7 +79,7 @@ namespace Mountainer_s_BackPack_OOP
                 else
                 {
                 BackPack.Checker(); // посчёт штрафных баллов
-                    switch (index_of_level)
+                    switch (Asking_ForIndex())
                     {
                         case 1: Console.WriteLine("Не хочу чтобы ты превратился в ледышку когда шел к горе.Давай по новой");
                         break;
