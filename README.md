@@ -19,3 +19,7 @@ git branch -va *удостовериться, что origin и upstream прис
 git merge upstream/master *слияние с измененным и обновленным репо*
 
 git push origin master *отправки в онлайн среду*
+
+git remote show origin *посмотреть изменения из онлайна*
+
+git init
